@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects – Arkadip Ray</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #e0e0e0;
+      padding: 0.8rem;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #222;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #007acc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    h1 {
+      color: #007acc;
+      text-align: center;
+    }
+
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 460px;
+      padding: 1.5rem;
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: #333;
+    }
+
+    .card a {
+      color: #007acc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      text-decoration: underline;
+    }
+
+    .desc {
+      margin: 1rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #888;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      .projects {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="hobbies.html">Hobbies</a>
+    <a href="academics.html">Academics</a>
+    <a href="#">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <h1>Projects</h1>
+
+    <div class="projects">
+      <div class="card">
+        <h2>WiseShield AI</h2>
+        <p><em>Hack4Bengal 3.0 Project</em></p>
+        <p class="desc">
+          WiseShield AI is a robust phishing detection platform combining Machine Learning, a Flask API server, and a Chrome Extension. It detects login fields, sends data to the server, and validates website authenticity in real-time. If found malicious, it alerts and redirects the user. Beware of phishing. 
+        </p>
+        <p><a href="https://github.com/Team-ByteWise/hack4bengal-2k24" target="_blank">GitHub Repository</a></p>
+      </div>
+
+      <div class="card">
+        <h2>EcoGrow</h2>
+        <p><em>FrostHacks 1.0 Project</em></p>
+        <p class="desc">
+          EcoGrow enables users to support environmental sustainability by earning tokens through ad views. These tokens sponsor real-world tree planting. Compete on the leaderboard and earn fresh produce as monthly rewards while helping NGOs make a greener planet.
+        </p>
+        <p><a href="https://github.com/Team-ByteWise/frosthacks-2k25" target="_blank">GitHub Repository</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Arkadip Ray. All rights reserved.
+  </footer>
+
+</body>
+</html>
